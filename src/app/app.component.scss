@@ -1,0 +1,26 @@
+.card {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  width: 45%;
+  min-height: 275px;
+  float: left;
+  border: 1px dotted red;
+
+  &__img{
+    width: 100%;
+    min-height: 300px;
+  }
+  &__title {
+    position: absolute;
+    z-index: 10;
+    font-size: 2.5em;
+    width: 100%;
+    font-weight: bold;
+    color: #000000;
+    top: 42%;
+    margin: 0;
+  }
+}
+
+
