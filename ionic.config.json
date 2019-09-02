@@ -1,0 +1,7 @@
+{
+  "name": "empireToday",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
