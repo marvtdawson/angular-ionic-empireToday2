@@ -11,19 +11,19 @@
     </ion-card-header>
 
   <ion-card-content>
-    <ion-card class="card" [navPush]="pushConfirmDriverArrival">
+    <ion-card class="card" (click)="onConfirmDriverArrival()">
       <img class="card__img" src="../../assets/img/driver1.jpeg" alt="">
       <div class="card__title-wrapper">
         <span class="card__title-wrapper__text">Confirm Driver</span>
       </div>
     </ion-card>
-    <ion-card class="card">
+    <ion-card class="card" (click)="onConfirmTrailerDrop()">
       <img class="card__img" src="../../assets/img/truck1.jpg" alt="">
       <div class="card__title-wrapper">
         <span class="card__title-wrapper__text">Confirm Trailer</span>
       </div>
     </ion-card>
-    <ion-card class="card">
+    <ion-card class="card" (click)="onAddNewDriver()">
       <img class="card__img" src="../../assets/img/trucker_group2.jpg" alt="">
       <div class="card__title-wrapper">
         <span class="card__title-wrapper__text">New Driver</span>

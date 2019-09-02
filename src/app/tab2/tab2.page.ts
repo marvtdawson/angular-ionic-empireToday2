@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {DriverArrivalPage} from '../driver-arrival/driver-arrival.page';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -7,8 +9,21 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  pushConfirmDriverArrival=;
+    pushConfirmDriverArrival = DriverArrivalPage;
 
-  constructor() {}
+    constructor(private router: Router) {
+    }
+
+    onConfirmDriverArrival() {
+        this.router.navigate(['driver-arrival']);
+    }
+
+    onConfirmTrailerDrop() {
+        this.router.navigate(['trailer-arrival']);
+    }
+
+    onAddNewDriver() {
+        this.router.navigate(['new-driver']);
+    }
 
 }

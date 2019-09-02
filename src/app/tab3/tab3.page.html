@@ -8,18 +8,30 @@
 
 <ion-content>
     <ion-card-header>
-      <ion-card-title align="center">Inventory</ion-card-title>
+      <ion-card-title align="center">Cycle Counts</ion-card-title>
     </ion-card-header>
-    <ion-card class="card">
+    <ion-card class="card" (click)="onCycleCountCarpet()">
         <img class="card__img" src="../../assets/img/carpet1.jpg" alt="">
         <div class="card__title-wrapper">
             <span class="card__title-wrapper__text">Carpet</span>
         </div>
     </ion-card>
-    <ion-card class="card">
+    <ion-card class="card" (click)="onCycleCountHardSurface()">
         <img class="card__img" src="../../assets/img/hardsurface1.jpg" alt="">
         <div class="card__title-wrapper">
             <span class="card__title-wrapper__text">Hard Surface</span>
+        </div>
+    </ion-card>
+    <ion-card class="card" (click)="onCycleCountSupplies()">
+        <img class="card__img" src="../../assets/img/supplies1.jpg" alt="">
+        <div class="card__title-wrapper">
+            <span class="card__title-wrapper__text">Supplies</span>
+        </div>
+    </ion-card>
+    <ion-card class="card" (click)="onCycleCountSamples()">
+        <img class="card__img" src="../../assets/img/carpet_samples1.jpg" alt="">
+        <div class="card__title-wrapper">
+            <span class="card__title-wrapper__text">Samples</span>
         </div>
     </ion-card>
 </ion-content>
