@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SiteDataService {
-  siteName = 'Load Tracker App';
+  siteName = 'Load Tracker';
   siteFooterName = 'Load Tracker LLC';
   siteTagLine = 'Trailer 2 Trailer Tracking';
   siteKeywords = 'Load Tracker, Load Tracker App, Logistics, Trucking, Trucks, Truck, ' +

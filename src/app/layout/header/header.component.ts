@@ -9,6 +9,7 @@ import {SiteDataService} from '../../../service/site-data/site-data.service';
 export class HeaderComponent implements OnInit {
 
   appName = this.siteData.siteName;
+  headerLogo = 'assets/icon/toy-truck-miniature-play_75_x_50.jpg';
 
   constructor(private siteData: SiteDataService) { }
 
