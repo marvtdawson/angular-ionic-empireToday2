@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 export class Tab3Page {
 
   constructor(private router: Router) {}
-
+  pageTitle = 'Cycle Counts';
   onCycleCountCarpet() {
     this.router.navigate(['carpet']);
   }

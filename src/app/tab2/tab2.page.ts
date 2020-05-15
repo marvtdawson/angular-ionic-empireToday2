@@ -10,6 +10,7 @@ import {Router} from '@angular/router';
 export class Tab2Page {
 
     pushConfirmDriverArrival = DriverArrivalPage;
+    pageTitle = 'Logistics';
 
     constructor(private router: Router) {
     }

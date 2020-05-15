@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SiteDataService} from '../../../service/site-data/site-data.service';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  pageTitle: '';
-  constructor() { }
+  appName = this.siteData.siteName;
+
+  constructor(private siteData: SiteDataService) { }
 
   ngOnInit() {}
 

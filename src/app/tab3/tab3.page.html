@@ -1,14 +1,8 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      eWS Portal
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
 <ion-content>
     <ion-card-header>
-      <ion-card-title align="center">Cycle Counts</ion-card-title>
+      <ion-card-title align="center">{{ pageTitle }}</ion-card-title>
     </ion-card-header>
     <ion-card class="card" (click)="onCycleCountCarpet()">
         <img class="card__img" src="../../assets/img/carpet1.jpg" alt="">
