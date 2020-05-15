@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import {LoginPage} from './login/login.page';
+import { Plugins, Capacitor } from '@capacitor/core';
+
 
 @Component({
   selector: 'app-root',
@@ -21,8 +22,9 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      if (Capacitor.isPluginAvailable('Splashscreen')) {Plugins.SplashScreen.hide(); }
+      // this.statusBar.styleDefault();
+      // this.splashScreen.hide();
     });
   }
 }

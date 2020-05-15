@@ -1,10 +1,5 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      eWS Portal
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
+
 <ion-content no-padding>
     <ion-card-header>
       <ion-card-title align="center">Logistics</ion-card-title>
@@ -14,19 +9,19 @@
     <ion-card class="card" (click)="onConfirmDriverArrival()">
       <img class="card__img" src="../../assets/img/driver1.jpeg" alt="">
       <div class="card__title-wrapper">
-        <span class="card__title-wrapper__text">Confirm Driver</span>
+        <span class="card__title-wrapper__text">Confirm Driver Times</span>
       </div>
     </ion-card>
     <ion-card class="card" (click)="onConfirmTrailerDrop()">
       <img class="card__img" src="../../assets/img/truck1.jpg" alt="">
       <div class="card__title-wrapper">
-        <span class="card__title-wrapper__text">Confirm Trailer</span>
+        <span class="card__title-wrapper__text">Confirm Trailer Dropped</span>
       </div>
     </ion-card>
     <ion-card class="card" (click)="onAddNewDriver()">
       <img class="card__img" src="../../assets/img/trucker_group2.jpg" alt="">
       <div class="card__title-wrapper">
-        <span class="card__title-wrapper__text">New Driver</span>
+        <span class="card__title-wrapper__text">New Driver Setup</span>
       </div>
     </ion-card>
   </ion-card-content>
